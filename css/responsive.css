@@ -1,19 +1,24 @@
 
-/* for small devices */
+/* header section for small devices */
 @media screen and (max-width: 576px) {
   .navbar{
     flex-direction: column;
-    margin-left: 50px;
+    /* margin-left: 50px; */
+  }
+
+  .logo-container{
+    width: 100%;
   }
 
   .menu-container{
     flex-direction: column;
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    width: 100%;
     gap: 20px;
   }
 }
 
-/* for medium devices */
+/*header section for medium devices */
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .navbar{
         flex-direction: column;
@@ -24,3 +29,5 @@
         gap: 20px;
     }
 }
+
+/* banner section for small devices */
