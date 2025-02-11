@@ -6,3 +6,67 @@
     box-sizing: border-box;
     font-family: "Poppins", serif;
 }
+
+.header-section{
+    /* border: 1px solid black; */
+    background-color: #9376e0;
+}
+
+
+/* navbar styles start-------------------------------------------------------- */
+.navbar{
+    /* border: 1px solid black; */
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* logo */
+.logo-container{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.logo-container img{
+    width: 90px;
+    object-fit: cover;
+}
+
+.logo-container p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.logo-name{
+    color: #e893cf;
+}
+
+
+/* menu */
+.menu-container{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.menu-container a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.login-btn{
+    background-color: #e893cf;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* navbar styles end------------------------------------------------- */
+
