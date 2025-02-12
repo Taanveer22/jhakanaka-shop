@@ -1,16 +1,15 @@
-
 /* header section for small devices------------------------------------------ */
 @media screen and (max-width: 576px) {
-  .navbar{
+  .navbar {
     flex-direction: column;
     /* margin-left: 50px; */
   }
 
-  .logo-container{
+  .logo-container {
     width: 100%;
   }
 
-  .menu-container{
+  .menu-container {
     flex-direction: column;
     /* margin-left: 80px; */
     width: 100%;
@@ -20,38 +19,58 @@
 
 /*header section for medium devices */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .navbar{
-        flex-direction: column;
-        align-items: center;
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .menu-container{
-        gap: 20px;
-    }
+  .menu-container {
+    gap: 20px;
+  }
 }
 
 /* banner section for small devices--------------------------------------------- */
 @media screen and (max-width: 576px) {
-   .banner-section{
-        flex-direction: column;
-   }
+  .banner-section {
+    flex-direction: column;
+  }
 
-   .banner-text-container{
-      width: 100%;
-      order: 2;
-   }
+  .banner-text-container {
+    width: 100%;
+    order: 2;
+  }
 
-   .banner-image-container{
+  .banner-image-container {
     width: 100%;
     order: 1;
-   }
+  }
 }
 
 
 /* banner section for medium devices */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  .banner-section{
+  .banner-section {
     width: 80%;
   }
-  
+
 }
+
+
+/* products section for small devices---------------------------------------------------------------- */
+@media screen and (max-width: 576px) {
+  .products-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*  N.B: 
+       No need to make responsive the gallery section
+       becauuse of flex-wrap and flex-basis working together
+       to make the gallery section automatically responsive.
+ */

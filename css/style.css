@@ -3,57 +3,62 @@
 
 
 /* common shared styles */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", serif;
 }
 
-.common-btn{
+.common-btn {
     cursor: pointer;
     padding: 10px 20px;
     border: 2px solid #e893cf;
     border-radius: 5px;
 }
 
+.common-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 /* header section styles start---------------------------------------------- */
-.header-section{
+.header-section {
     /* border: 1px solid black; */
     background-color: #9376e0;
     margin-bottom: 30px;
 }
 
 /* navbar styles */
-.navbar{
+.navbar {
     /* border: 1px solid black; */
     max-width: 1024px;
     margin: 0 auto;
     display: flex;
 }
 
-.logo-container{
+.logo-container {
     /* border: 1px solid black; */
     display: flex;
     align-items: center;
     width: 50%;
 }
 
-.logo-container img{
+.logo-container img {
     width: 90px;
     object-fit: cover;
 }
 
-.logo-container p{
+.logo-container p {
     font-size: 25px;
     font-weight: 700;
 }
 
-.logo-name{
+.logo-name {
     color: #e893cf;
 }
 
-.menu-container{
+.menu-container {
     /* border: 1px solid black; */
     display: flex;
     align-items: center;
@@ -61,14 +66,14 @@
     width: 50%;
 }
 
-.menu-container a{
+.menu-container a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
 }
 
-.login-btn{
+.login-btn {
     background-color: #e893cf;
     padding: 10px 20px;
     border-radius: 5px;
@@ -76,13 +81,14 @@
     font-size: 20px;
     font-weight: 500;
 }
+
 /* header section styles end------------------------------------------------- */
 
 
 
 
 /* banner section styles start------------------------------------------------- */
-.banner-section{
+.banner-section {
     /* border: 1px solid black; */
     max-width: 1024px;
     margin: 0 auto;
@@ -90,9 +96,10 @@
     background-color: #e6e9eb;
     border-radius: 10px;
     padding: 20px;
+    margin-bottom: 30px;
 }
 
-.banner-text-container{
+.banner-text-container {
     /* border: 1px solid black; */
     width: 50%;
     display: flex;
@@ -102,7 +109,7 @@
 }
 
 
-.banner-heading-1{
+.banner-heading-1 {
     font-size: 50px;
     font-weight: 700;
     background: linear-gradient(to top, #9376e0, #e893cf);
@@ -110,36 +117,36 @@
     color: transparent;
 }
 
-.banner-heading-2{
+.banner-heading-2 {
     font-size: 40px;
     font-weight: bold;
     font-family: "Dancing Script", serif;
 }
 
-.social-icons{
+.social-icons {
     display: flex;
     gap: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-.banner-btn{
+.banner-btn {
     display: flex;
     gap: 20px;
 }
 
-.fa-brands{
+.fa-brands {
     font-size: 30px;
 }
 
-.banner-image-container{
+.banner-image-container {
     /* border: 1px solid black; */
     width: 50%;
     position: relative;
 }
 
 
-.discount{
+.discount {
     /* 1st step: make the box to circle */
     width: 80px;
     height: 80px;
@@ -158,7 +165,8 @@
     bottom: 70%;
     left: 65%;
 }
-.banner-image-container img{
+
+.banner-image-container img {
     /* width: 70%;
     display: block;
     margin: 0 auto; */
@@ -169,8 +177,90 @@
     border-radius: 10px;
 }
 
-
-
-
 /* banner section styles end------------------------------------------------- */
 
+
+/* products section styles start here-------------------------------------------------------------- */
+
+.products-section{
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.single-product {
+    background-color: #e6e9eb;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.single-product img {
+    width: 70%;
+    display: block;
+    object-fit: cover;
+}
+
+.p-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.fa-solid {
+    background-color: #9376e0;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+
+}
+
+.p-description {
+    margin-bottom: 10px;
+}
+
+.p-price {
+    margin-bottom: 10px;
+}
+
+/* products section styles end here-------------------------------------------------------------- */
+
+
+/* gallery section styles start here-------------------------------------------------------------- */
+.gallery-section{
+    margin-bottom: 30px;
+}
+
+.gallery-container{
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #e6e9eb;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.single-gallery{
+   flex-basis: 300px;
+   border: 2px solid black
+}
+
+.single-gallery img{
+    width: 70%;
+    display: block;
+    object-fit: cover;
+}
+/* gallery sectin styles end here----------------------------------------------------------------- */
