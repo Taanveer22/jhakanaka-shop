@@ -101,6 +101,7 @@
     align-items: center;
 }
 
+
 .banner-heading-1{
     font-size: 50px;
     font-weight: 700;
@@ -134,8 +135,29 @@
 .banner-image-container{
     /* border: 1px solid black; */
     width: 50%;
+    position: relative;
 }
 
+
+.discount{
+    /* 1st step: make the box to circle */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(128, 128, 28);
+    border: 2px solid black;
+    color: white;
+
+    /* 2nd step: move the discount text into the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* 3rd step: fixed the circle position depend on parent div position  */
+    position: absolute;
+    bottom: 70%;
+    left: 65%;
+}
 .banner-image-container img{
     /* width: 70%;
     display: block;

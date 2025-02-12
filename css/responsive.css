@@ -1,5 +1,5 @@
 
-/* header section for small devices */
+/* header section for small devices------------------------------------------ */
 @media screen and (max-width: 576px) {
   .navbar{
     flex-direction: column;
@@ -30,4 +30,28 @@
     }
 }
 
-/* banner section for small devices */
+/* banner section for small devices--------------------------------------------- */
+@media screen and (max-width: 576px) {
+   .banner-section{
+        flex-direction: column;
+   }
+
+   .banner-text-container{
+      width: 100%;
+      order: 2;
+   }
+
+   .banner-image-container{
+    width: 100%;
+    order: 1;
+   }
+}
+
+
+/* banner section for medium devices */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .banner-section{
+    width: 80%;
+  }
+  
+}
