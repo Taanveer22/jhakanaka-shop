@@ -69,8 +69,13 @@
   }
 }
 
-/*  N.B: 
+/*  N.B:--------------------------------------------------------------------------------------
        No need to make responsive the gallery section
        becauuse of flex-wrap and flex-basis working together
        to make the gallery section automatically responsive.
+ */
+
+
+ /* 
+    Note : footer section is too small and simple and it is automatically responsive by nature
  */
